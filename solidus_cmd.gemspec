@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = 'Solidus Team'
   s.email       = 'contact@solidus.io'
   s.homepage    = "http://solidus.io"
-  s.license     = %q{BSD-3}
+  s.license     = %q{BSD-3-Clause}
   s.summary     = %q{Solidus command line utility}
   s.description = %q{tools to create new Solidus extensions}
 

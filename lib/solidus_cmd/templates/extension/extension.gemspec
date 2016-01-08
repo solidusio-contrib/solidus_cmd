@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = <%= class_name %>::VERSION
   s.summary     = "TODO"
   s.description = "TODO"
-  s.license     = "BSD-3"
+  s.license     = "BSD-3-Clause"
 
   # s.author    = 'You'
   # s.email     = 'you@example.com'
