@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   # s.author    = 'You'
   # s.email     = 'you@example.com'
-  # s.homepage  = 'TODO'
+  # s.homepage  = 'http://www.example.com'
 
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
