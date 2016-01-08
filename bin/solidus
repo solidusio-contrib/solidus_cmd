@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require 'solidus_cmd'
+
+command = ARGV.first
+case command
+  when 'extension'
+    ARGV.shift
+    SolidusCmd::Extension.start
+  else
+    fail "unknown command: #{command}"
+end

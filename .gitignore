@@ -1,0 +1,10 @@
+spec/dummy
+.sass-cache
+coverage
+Gemfile.lock
+*.swp
+.rvmrc
+.ruby-gemsets
+.ruby-version
+.bundle
+pkg
