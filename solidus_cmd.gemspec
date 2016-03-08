@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'solidus_cmd/version'
 
 Gem::Specification.new do |s|
-  s.name        = "solidus_cmd"
+  s.name        = 'solidus_cmd'
   s.version     = SolidusCmd::VERSION
   s.authors     = 'Solidus Team'
   s.email       = 'contact@solidus.io'
