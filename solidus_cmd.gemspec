@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
-# $:.push File.expand_path("../lib", __FILE__)
-# require "solidus_cmd/version"
+$:.push File.expand_path("../lib", __FILE__)
+require 'solidus_cmd/version'
 
 Gem::Specification.new do |s|
   s.name        = "solidus_cmd"
-  s.version     = '1.0.0'
+  s.version     = SolidusCmd::VERSION
   s.authors     = 'Solidus Team'
   s.email       = 'contact@solidus.io'
   s.homepage    = 'http://solidus.io'
