@@ -3,9 +3,9 @@ require 'solidus_cmd'
 
 command = ARGV.first
 case command
-  when 'extension'
+when 'extension'
     ARGV.shift
     SolidusCmd::Extension.start
-  else
+else
     fail "unknown command: #{command}"
 end

@@ -6,7 +6,7 @@ module SolidusCmd
     include Thor::Actions
 
     desc "builds a solidus extension"
-    argument :file_name, :type => :string, :desc => 'rails app_path', :default => '.'
+    argument :file_name, type: :string, desc: 'rails app_path', default: '.'
 
     source_root File.expand_path('../templates/extension', __FILE__)
 
@@ -46,6 +46,5 @@ module SolidusCmd
         end
       end
     end
-
   end
 end
