@@ -4,7 +4,6 @@ AllCops:
   Exclude:
     - 'spec/dummy/**/*'
     - 'vendor/bundle/**/*'
-    - 'Rakefile'
   TargetRubyVersion: 2.1
 
 # Sometimes I believe this reads better
@@ -199,6 +198,10 @@ Lint/AmbiguousRegexpLiteral:
 Lint/AssignmentInCondition:
   Enabled: false
   StyleGuide: http://relaxed.ruby.style/#lintassignmentincondition
+
+Lint/HandleExceptions:
+  Exclude:
+    - 'Rakefile'
 
 Metrics/AbcSize:
   Enabled: false
