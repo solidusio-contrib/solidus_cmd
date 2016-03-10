@@ -30,6 +30,7 @@ module SolidusCmd
       template 'rspec', "#{file_name}/.rspec"
       template 'spec/spec_helper.rb.tt', "#{file_name}/spec/spec_helper.rb"
       template 'rubocop.yml', "#{file_name}/.rubocop.yml"
+      template 'travis.yml', "#{file_name}/.travis.yml"
     end
 
     no_tasks do
