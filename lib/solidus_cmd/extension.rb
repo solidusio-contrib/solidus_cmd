@@ -6,7 +6,7 @@ module SolidusCmd
     include Thor::Actions
 
     desc "builds a solidus extension"
-    argument :file_name, :type => :string, :desc => 'rails app_path', :default => '.'
+    argument :file_name, type: :string, desc: 'rails app_path', default: '.'
 
     source_root File.expand_path('../templates/extension', __FILE__)
 
@@ -29,6 +29,7 @@ module SolidusCmd
       template 'config/locales/en.yml', "#{file_name}/config/locales/en.yml"
       template 'rspec', "#{file_name}/.rspec"
       template 'spec/spec_helper.rb.tt', "#{file_name}/spec/spec_helper.rb"
+      template 'rubocop.yml', "#{file_name}/.rubocop.yml"
     end
 
     no_tasks do
@@ -46,6 +47,5 @@ module SolidusCmd
         end
       end
     end
-
   end
 end
