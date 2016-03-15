@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   # s.homepage  = 'http://www.example.com'
 
   s.files = Dir["{app,config,db,lib}/**/*", 'LICENSE', 'Rakefile', 'README.md']
-  s.test_files = Dir['test/**/*'']
+  s.test_files = Dir['test/**/*']
 
   s.add_dependency 'solidus_core', '<%= solidus_version %>'
 
