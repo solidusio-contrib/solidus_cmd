@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'solidus_core', '<%= solidus_version %>'
 
   s.add_development_dependency 'capybara'
+  s.add_development_dependency 'ffaker'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'sass-rails'
