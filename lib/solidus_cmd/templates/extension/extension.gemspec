@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'factory_girl'
+  s.add_development_dependency 'factory_bot'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'rubocop', '0.37.2'
   s.add_development_dependency 'rubocop-rspec', '1.4.0'
