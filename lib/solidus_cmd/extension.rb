@@ -22,6 +22,7 @@ module SolidusCmd
       template 'extension.gemspec', "#{file_name}/#{file_name}.gemspec"
       template 'Gemfile', "#{file_name}/Gemfile"
       template 'gitignore', "#{file_name}/.gitignore"
+      template 'gem_release.yml.tt', "#{file_name}/.gem_release.yml"
       template 'LICENSE', "#{file_name}/LICENSE"
       template 'Rakefile', "#{file_name}/Rakefile"
       template 'README.md', "#{file_name}/README.md"
