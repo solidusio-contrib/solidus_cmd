@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rubocop', '~> 0.49'
   s.add_development_dependency 'rubocop-rspec'
   s.add_development_dependency 'relaxed-rubocop'
+  s.add_development_dependency 'gem-release'
   # Temporary hack until https://github.com/wycats/thor/issues/234 is fixed
   s.add_dependency 'thor', '~> 0.14'
 end
