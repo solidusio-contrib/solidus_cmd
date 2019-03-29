@@ -19,7 +19,7 @@ module SolidusCmd
       directory 'lib', "#{file_name}/lib"
       directory 'bin', "#{file_name}/bin"
 
-      template 'extension.gemspec', "#{file_name}/#{file_name}.gemspec"
+      template 'extension.gemspec.erb', "#{file_name}/#{file_name}.gemspec"
       template 'Gemfile', "#{file_name}/Gemfile"
       template 'gitignore', "#{file_name}/.gitignore"
       template 'gem_release.yml.tt', "#{file_name}/.gem_release.yml"
