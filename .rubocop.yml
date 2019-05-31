@@ -1,4 +1,6 @@
 require: rubocop-rspec
+require: rubocop-rails
+
 inherit_gem:
   relaxed-rubocop: .rubocop.yml
 
