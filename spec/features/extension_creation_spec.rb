@@ -19,4 +19,16 @@ RSpec.describe "Extension Creation" do
     out = `cd #{tmp_root}/#{build_dir} && #{ext_root}/bin/solidus extension #{extension_name}`.to_s
     expect(out).to match(/#{gemspec_name}/)
   end
+
+  describe 'CI platform' do
+    it 'uses circleci by default' do
+      out = `cd #{tmp_root}/#{build_dir} && #{ext_root}/bin/solidus extension #{extension_name}`.to_s
+      expect(out).to match(".circleci")
+    end
+
+    it "allows specifying a ci platform" do
+      out = `cd #{tmp_root}/#{build_dir} && #{ext_root}/bin/solidus extension #{extension_name} --ci=travis`.to_s
+      expect(out).to match(".travis.yml")
+    end
+  end
 end

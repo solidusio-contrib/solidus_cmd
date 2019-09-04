@@ -27,6 +27,17 @@ A Solidus extension is bundled as a Ruby gem, so be sure to update your `.gemspe
 
 You can now load your extension in your Solidus project's Gemfile.
 
+
+### Passing options to extensions generator
+
+You can pass `--ci` option to the generator command to configure the CI
+platform to use in the extension. By default circleci is used and recommended
+but you can also use travis with:
+
+```bash
+$ solidus extension my_extension --ci=travis
+```
+
 ## Questions?
 
 The best way to ask questions is via the [#support channel on the Solidus Slack](https://solidusio.slack.com/messages/support/details/).

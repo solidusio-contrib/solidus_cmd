@@ -7,6 +7,7 @@ module SolidusCmd
 
     desc "builds a solidus extension"
     argument :file_name, type: :string, desc: 'rails app_path', default: '.'
+    class_option :ci, type: :string, desc: 'which ci platform to use (circleci, travis)', default: 'circleci'
 
     source_root File.expand_path('../templates/extension', __FILE__)
 
@@ -31,7 +32,13 @@ module SolidusCmd
       template 'rspec', "#{file_name}/.rspec"
       template 'spec/spec_helper.rb.tt', "#{file_name}/spec/spec_helper.rb"
       template 'rubocop.yml', "#{file_name}/.rubocop.yml"
-      template 'travis.yml', "#{file_name}/.travis.yml"
+
+      case options[:ci]
+      when "travis"
+        template 'travis.yml', "#{file_name}/.travis.yml"
+      when "circleci"
+        directory '.circleci', "#{file_name}/.circleci"
+      end
     end
 
     no_tasks do
