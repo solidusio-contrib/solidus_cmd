@@ -10,6 +10,10 @@
 
 solidus_cmd is a command line utility for creating extensions for the [Solidus ecommerce platform](https://github.com/solidusio/solidus).
 
+## DEPRECATION NOTICE :warning: :construction:
+
+This extension is deprecated in favor of [Solidus extension dev tools](https://github.com/solidusio-contrib/solidus_extension_dev_tools).
+
 ## Getting started
 
 Install the gem!
