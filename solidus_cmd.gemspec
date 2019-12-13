@@ -12,6 +12,10 @@ Gem::Specification.new do |s|
   s.license     = 'BSD-3-Clause'
   s.summary     = 'Solidus command line utility'
   s.description = 'tools to create new Solidus extensions'
+  s.post_install_message = <<-EOT
+    This extension was deprecated in favor of solidus_extension_dev_tools
+    (https://github.com/solidusio-contrib/solidus_extension_dev_tools)
+  EOT
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
